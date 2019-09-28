@@ -1,0 +1,297 @@
+.contact-header {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/contact-header-767.jpg);
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    padding-top: 1px; /* hack to stop child element top margin pushing div down */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact-callback {
+    margin-top: 3rem;
+}
+
+.contact-level-2 {
+    margin-top: 3rem;
+    padding-bottom: 1px;
+    margin-bottom: 4rem;
+}
+
+/************************
+* >= 500px
+*************************/
+
+@media only screen and (min-width: 500px) {
+
+    .contact-callback.callback_form {
+        width: 350px;
+    }
+
+    .contact-callback .callback {
+        width: 280px;
+    }
+
+    .contact_form {
+        width: 450px;
+    }
+
+    .contact_form_text,
+    .contact_form_textarea {
+    width: 400px;
+    }
+
+}
+
+/************************
+* >= 768px (md)
+*************************/
+
+@media only screen and (min-width: 768px) {
+
+    .contact-header {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/contact-header-1200.jpg);
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .contact_level_1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contact-callback.callback_form {
+        width: 250px;
+        flex-shrink: 0;
+        margin-top: 0;
+        margin-left: 30px;
+    }
+
+    .contact-callback .callback {
+        width: 200px;
+    }
+
+    .contact-level-2 {
+        margin-top: 7rem;
+    }
+
+    .contact_form {
+        width: 700px;
+    }
+
+    .contact_form_text,
+    .contact_form_textarea {
+        width: 600px;
+    }
+    
+}
+
+/************************
+* >= 992px (lg)
+*************************/
+
+@media only screen and (min-width: 992px) {
+
+    .contact-header {
+        height: 360px;
+    }
+
+    .contact_level_1 {
+        max-width: 992px;
+    }
+
+    .contact-blurb {
+        padding-right: 2rem;
+    }
+
+    .contact-callback.callback_form {
+        width: 350px;
+    }
+
+    .contact-callback .callback {
+        width: 280px;
+    }
+
+}
+
+/************************
+* >= 1200px (xl)
+*************************/
+
+@media only screen and (min-width: 1200px) {
+
+    .contact-header {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/contact-header-1920.jpg);
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+        height: 450px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .contact_form {
+        width: 950px;
+        background: url(../images/noise-texture-2.png), radial-gradient(circle at 25% 25%, #015c65, #182f62);
+        box-shadow: 3px 4px 7px 0 rgba(0,0,0,0.5);
+    }
+
+    .contact-callback {
+        background: url(../images/noise-texture-2.png), radial-gradient(circle at 25% 25%, #015c65, #182f62);
+        box-shadow: 3px 4px 7px 0 rgba(0,0,0,0.5);
+    }
+
+    .contact_form_text,
+    .contact_form_textarea {
+        width: 850px;
+    }
+
+    .service-separator.contact-separator {
+        margin-top: 140px;
+    }
+
+}
+
+/************************
+* >= 1350px (xl)
+*************************/
+
+@media only screen and (min-width: 1350px) {
+
+    .service-separator.contact-separator {
+        margin-bottom: 150px;
+    }
+
+}
+
+/*********************
+**********************
+* FORM SUBMIT PAGE
+**********************
+*********************/
+
+.submit-header {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/submit_header_767.jpg);
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    padding-top: 1px; /* hack to stop child element top margin pushing div down */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.submit-body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.submit-body__left,
+.submit-body__right {
+    width: 100%;
+}
+
+.submit-body__left {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-body__left--inner {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/thanks_girl.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+}
+
+.submit.signature {
+    text-align: right;
+    margin-top: 2rem;
+    float: none;
+}
+
+/************************
+* >= 768px (md)
+*************************/
+
+@media only screen and (min-width: 768px) {
+
+    .submit-header {
+        height: 300px;
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/submit_header_1200.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .submit-body {
+        flex-direction: row;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
+    .submit-body__left {
+        width: 33%;
+        flex-shrink: 0;
+        margin-right: 40px;
+    }
+
+    .submit-body__right p {
+        text-align: justify;
+    }
+}
+
+/************************
+* >= 992px (lg)
+*************************/
+
+@media only screen and (min-width: 992px) {
+
+    .submit-header {
+        height: 360px;
+    }
+
+    .submit-body {
+        max-width: 960px;
+    }
+
+    .submit-body__left {
+        margin-right: 20px;
+    }
+
+}
+
+/************************
+* >= 1200px (xl)
+*************************/
+
+@media only screen and (min-width: 1200px) {
+
+    .submit-header {
+        height: 450px;
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/submit_header_1920.jpg);
+        background-size: cover;
+        background-position: center;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+    }
+
+    .submit-body {
+        margin-top: 100px;
+        margin-bottom: 400px;
+    }
+
+}

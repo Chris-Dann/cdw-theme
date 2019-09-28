@@ -1,18 +1,18 @@
 :root {
-    --footer-background-color: darkgrey;
-    --footer-text-color: black;
-    --footer-vertical-padding: 2rem;
-    --footer-font-size: .8rem;
 
     --footer-links-color: black;
     --footer-links-hover: red;
 }
 
 .footer {
-    background-color: var(--footer-background-color);
-    color: var(--footer-text-color);
-    padding: var(--footer-vertical-padding) 0;
-    font-size: var(--footer-font-size);
+    background-color: #343a40;
+    color: #adadad;
+    padding: 2rem 0 4rem 0;
+    font-size: .8rem;
+}
+
+.footer-column {
+    margin-bottom: 1em;
 }
 
 /* STYLING FOR ANY MENUS IN THE FOOTER */

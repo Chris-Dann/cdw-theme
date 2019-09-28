@@ -1,0 +1,207 @@
+.how-work-header {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-header-767.jpg);
+    height: 230px;
+    background-position: center top;
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    padding-top: 1px; /* hack to stop child element top margin pushing div down */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-work-stage {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-work-stage-image {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.how-work-stage-image__image {
+    width: 220px;
+    height: 220px;
+    -webkit-clip-path: polygon(60% 0%, 100% 35%, 90% 85%, 40% 100%, 0% 65%, 10% 15%);
+    clip-path: polygon(60% 0%, 100% 35%, 90% 85%, 40% 100%, 0% 65%, 10% 15%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-work-stage-image__image.how-work-inital-chat {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-chat-200.jpg);
+    background-size: cover;
+}
+
+.how-work-stage-image__image.how-work-quotes {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-quotes-200.jpg);
+    background-size: cover;
+}
+
+.how-work-stage-image__image.how-work-proposal {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-proposal-200.jpg);
+    background-size: cover;
+}
+
+.how-work-stage-image__image.how-work-to-work {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-to-work-200.jpg);
+    background-size: cover;
+}
+
+.how-work-stage-image__image.how-work-maintenance {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-maintenance-200.jpg);
+    background-size: cover;
+}
+
+.how-work-stage-image__title {
+    margin-bottom: 0;
+    letter-spacing: .06em;
+    font-size: 1.6rem;
+}
+
+.how-work-small-screen-down-arrow {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 10px auto;
+}
+
+.how-work-stage.how-work-maintenance {
+    margin-bottom: 50px;
+    padding-bottom: 1px;
+}
+
+/********************
+* >= 768px (md)
+********************/
+
+@media only screen and (min-width: 768px) {
+
+    .how-work-header {
+        height: 300px;
+    }
+
+    .how-work-stage-image__image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .how-work-stage-image__image.how-work-inital-chat {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-chat-400.jpg);
+        background-size: cover;
+    }
+    
+    .how-work-stage-image__image.how-work-quotes {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-quotes-400.jpg);
+        background-size: cover;
+    }
+    
+    .how-work-stage-image__image.how-work-proposal {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-proposal-400.jpg);
+        background-size: cover;
+    }
+    
+    .how-work-stage-image__image.how-work-to-work {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-to-work-400.jpg);
+        background-size: cover;
+    }
+    
+    .how-work-stage-image__image.how-work-maintenance {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-maintenance-400.jpg);
+        background-size: cover;
+    }
+
+}
+
+/********************
+* >= 992px (lg)
+********************/
+
+@media only screen and (min-width: 992px) {
+
+    .how-work-header {
+        height: 360px;
+    }
+
+    .how-work-stage {
+        flex-direction: row;
+        height: 370px;
+    }
+
+    .how-work-stage.odd {
+        flex-direction: row-reverse;
+    }
+
+    .how-work-stage-image {
+        height: 100%;
+        width: 40%;
+        flex-shrink: 0;
+    }
+
+    .how-work-stage-image__title {
+        font-size: 1.8rem;
+    }
+
+    .how-work-stage-text {
+        display: flex;
+        align-items: center;
+    }
+
+    .how-work-large-screen-down-arrow-from-left {
+        position: absolute;
+        left: 320px;
+        top: 290px;
+        z-index: 100;
+    }
+
+    .how-work-large-screen-down-arrow-from-right {
+        position: absolute;
+        right: 320px;
+        top: 290px;
+        z-index: 100;
+    }
+
+}
+
+/********************
+* >= 1200px (xl)
+********************/
+
+@media only screen and (min-width: 1200px) {
+
+    .how-work-header {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/how-work-header-1920.jpg);
+        height: 450px;
+        background-size: cover;
+        background-position: center top;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+    }
+
+    .how-work-stage-image__image {
+        width: 270px;
+        height: 270px;
+    }
+
+    .how-work-extra-large-screen-down-arrow-from-left {
+        position: absolute;
+        left: 370px;
+        top: 300px;
+        z-index: 100;
+    }
+
+    .how-work-extra-large-screen-down-arrow-from-right {
+        position: absolute;
+        right: 370px;
+        top: 300px;
+        z-index: 100;
+    }
+
+}

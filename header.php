@@ -14,35 +14,34 @@
 	<div class="dano_inner_page">
 	<header class="dano_header">
 
-			<h1 class="signature">Chris Dann</h1>
-			<i class="hamburger-icon fas fa-bars"></i>
+		<h1 class="signature"><a href="<?php echo get_site_url(); ?>">Chris Dann</a></h1>
+		<i class="hamburger-icon fas fa-bars d-md-none"></i>
+		<div class="desktop-menu d-none d-md-inline-block">
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+			?>
+		</div>
 
 	</header>
 
 	<!-- MOBILE NAVIGATION MENU -->
 	<nav id="mobile-navigation" class="ut_hamburger_menu">
 		<div class="ut_hamburger_menu_menu">
-			<div class="ut_hamburger_menu_menu__close_button">
-				<i class="ut_hamburger_menu_menu__close_button--icon fas fa-times"></i>
+			<div class="ut_hamburger_menu_menu__inner">
+				<div class="ut_hamburger_menu_menu__close_button">
+					<i class="ut_hamburger_menu_menu__close_button--icon fas fa-times"></i>
+				</div>
+				<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'handheld-menu',
+						'container'		 => '',
+					) );
+				?>
 			</div>
-		<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-2',
-				'menu_id'        => 'handheld-menu',
-				'container'		 => '',
-			) );
-			?>
-		</div>
-	</nav>
-	<!-- DESKTOP NAVIGATION ELEMENTS -->
-	<nav id="site-navigation" class="ut_main_menu container-fluid">
-		<div class="container">
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
 		</div>
 	</nav>
 

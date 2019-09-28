@@ -1,0 +1,300 @@
+.services-header {
+    background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/services_header_767.jpg);
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    padding-top: 1px; /* hack to stop child element top margin pushing div down */ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-inner-image {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-inner-image__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+}
+
+.service-inner-image__image.services-web-design {
+    background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/cave_painting_200.jpg);
+    background-size: cover;
+}
+
+.service-inner-image__image.services-web-development {
+    background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/man_sawing_200.jpg);
+    background-size: cover;
+}
+
+.service-inner-image__image.services-hosting {
+    background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/hut_200.jpg);
+    background-size: cover;
+}
+
+.service-inner-image__image.services-seo {
+    background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/man_shooting_arrow_200.jpg);
+    background-size: cover;
+}
+
+.service-inner-image__image.services-digital-marketing {
+    background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/market_stall_200.jpg);
+    background-size: cover;
+}
+
+.services-inner-text__inner-title {
+    color: #efeada;
+    /*color: #c3bda5;*/
+}
+
+.service-separator {
+    background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/separator_1_1000.jpg);
+    background-size: cover;
+    width: 1000px;
+    height: 40px;
+    margin-left: -30px;
+}
+
+.service.services-digital-marketing {
+    padding-bottom: 1px;
+    margin-bottom: 50px;
+}
+
+.service-separator.rotate-cw {
+    transform: rotate(10deg);
+    margin-top: 130px;
+    margin-bottom: 0px;
+}
+
+.service-separator.rotate-ccw {
+    transform: rotate(-10deg);
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+/*************************
+* 425px
+**************************/
+
+@media only screen and (min-width: 425px) {
+    .services-header {
+        margin-bottom: 30px;
+    }
+
+    .service-separator.rotate-ccw {
+        margin-top: 30px
+    }
+
+}
+
+/*************************
+* 500px
+**************************/
+
+@media only screen and (min-width: 500px) {
+
+    .services-header {
+        margin-bottom: 50px;
+    }
+
+    .service-separator.rotate-ccw {
+        margin-top: 50px;
+    }
+
+}
+
+/*************************
+* 650px
+**************************/
+
+@media only screen and (min-width: 650px) {
+
+    .service-separator.rotate-cw {
+        margin-bottom: 60px;
+    }
+
+    .service-separator.rotate-ccw {
+        margin-top: 80px;
+    }
+
+}
+
+/*************************
+* 768px (md)
+**************************/
+
+@media only screen and (min-width: 768px) {
+
+    .services-header {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/services_header_1200.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .service-separator {
+        height: 50px;
+    }
+
+    .services-inner-text__inner-title {
+        font-size: 1.4rem;
+    }
+
+    .services-inner-text__inner-copy {
+        text-align: justify;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .service-separator.rotate-cw {
+        margin-bottom: 40px;
+    }
+
+    .service-separator.rotate-ccw {
+        margin-bottom: 80px;
+    }
+
+    .service.services-digital-marketing {
+        margin-bottom: 100px;
+    }
+
+    .service-separator {
+        width: 1200px;
+        height: 50px;
+    }
+
+}
+
+/*************************
+* 992px (lg)
+**************************/
+
+@media only screen and (min-width: 992px) {
+
+    .services-header {
+        height: 360px;
+    }
+
+    .service {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        min-height: 300px;
+    }
+
+    .service.services-web-development,
+    .service.services-seo {
+        flex-direction: row-reverse;
+    }
+
+    .service-inner-image {
+        width: 35%;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .service-inner-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .service-separator.rotate-cw {
+        margin-bottom: 90px;
+    }
+
+    .service-separator.rotate-ccw {
+        margin-bottom: 130px;
+    }
+
+    .service-separator {
+        background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/separator_1_1000.jpg);
+        background-size: contain;
+        width: 1500px;
+        height: 50px;
+    }
+}
+
+/*************************
+* 1200px (xl)
+**************************/
+
+@media only screen and (min-width: 1200px) {
+    
+    .services-header {
+        background: linear-gradient( rgba(6,19,61,0.6), rgba(6, 19, 61, 0.6) ), url(../images/services_header_1920.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 450px;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+    }
+
+    .service-separator {
+        width: 2000px;
+    }
+
+    .services-inner-text__inner-copy {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .service-inner-image__image {
+        width: 260px;
+        height: 260px;
+    }
+
+    .service-inner-image__image.services-web-design {
+        background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/cave_painting_400.jpg);
+        background-size: cover;
+    }
+    
+    .service-inner-image__image.services-web-development {
+        background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/man_sawing_400.jpg);
+        background-size: cover;
+    }
+    
+    .service-inner-image__image.services-hosting {
+        background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/hut_400.jpg);
+        background-size: cover;
+    }
+    
+    .service-inner-image__image.services-seo {
+        background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/man_shooting_arrow_400.jpg);
+        background-size: cover;
+    }
+    
+    .service-inner-image__image.services-digital-marketing {
+        background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/market_stall_400.jpg);
+        background-size: cover;
+    }
+
+    .service-separator {
+        background: linear-gradient( rgba(6,19,61,0.5), rgba(6, 19, 61, 0.5) ), url(../images/separator_1_1000.jpg);
+        background-size: contain;
+        width: 2000px;
+        height: 55px;
+    }
+
+    .service-separator.rotate-cw {
+        margin-top: 190px;
+    }
+
+    .service-separator.rotate-ccw {
+        margin-top: 120px;
+        margin-bottom: 180px;
+    }
+}

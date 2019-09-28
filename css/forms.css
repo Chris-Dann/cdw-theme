@@ -1,9 +1,15 @@
+.wpcf7-response-output {
+    display: none !important;
+}
+
 .callback_form {
     width: 250px;
     margin: 0px auto;
     text-align: center;
-    background-color: rgba(109, 207, 246, .28);
+    background-color: rgba(109, 207, 246, .30);
     border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .callback_form_inner {
@@ -15,4 +21,99 @@
 .callback {
     width: 200px;
     border-radius: 10px;
+}
+
+.callback_header {
+    font-size: 1.7rem;
+    letter-spacing: .04em;
+    margin-bottom: 52px;
+}
+
+.wpcf7 label {
+    color: white;
+    font-size: 0.8rem;
+    font-style: italic;
+    line-height: 140%;
+    text-align: left;
+}
+
+.wpcf7 p {
+    text-align: left;
+}
+
+.wpcf7 label input,
+.wpcf7 label textarea {
+    color: black;
+    font-size: 1rem;
+    opacity: 0.5;
+    border: 0;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+.wpcf7 label input:focus,
+.wpcf7 label textarea:focus {
+    opacity: 0.9;
+}
+
+input[type="submit"] {
+    background-color: #e90aef;
+    background-color: #bf9130;
+    border: 0;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    padding-bottom: 12px;
+}
+
+.my-name input[type="text"],
+.my-phone input[type="text"] {
+    margin-top: 5px;
+}
+
+.contact_form {
+    width: 300px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgba(109, 207, 246, .30);
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.contact_form_inner {
+    text-align: left;
+    display: inline-block;
+    margin-right: -20px;
+}
+
+.contact_form_text,
+.contact_form_textarea {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.contact_header {
+    font-size: 1.7rem;
+    letter-spacing: .04em;
+    margin-bottom: 52px;
+}
+
+/************************
+* >= 992px (lg)
+*************************/
+
+@media only screen and (min-width: 992px) {
+
+    .callback_form {
+        width: 350px;
+    }
+
+    .callback {
+        width: 280px;
+    }
+
 }
