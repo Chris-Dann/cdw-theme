@@ -1,0 +1,44 @@
+@import "typography.css";
+@import "links_and_buttons.css";
+@import "forms.css";
+@import "menus.css";
+@import "header.css";
+@import "footer.css";
+@import "homepage.css";
+
+
+
+/* remove the WordPress edit link for admins */
+.edit-link { 
+    display: none; 
+}
+
+/* CONTAINERS */
+.dano_outer_page {
+    width: 100%;
+}
+
+.dano_inner_page {
+    width: 100%;
+    background: linear-gradient( to right, rgba(24,60,127,1), rgba(17,28,82,1) );
+}
+
+/* responsive Google Map */
+.dano_responsive_google_map {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.dano_responsive_google_map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#content {
+    padding: 3rem 0;
+}

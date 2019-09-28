@@ -1,0 +1,12 @@
+/* DEFAULT FONT FAMILY */
+body {
+    font-family: 'Raleway';
+}
+
+/* HEADER SIGNATURE */
+h1.signature {
+    float: left;
+    font-size: 1.8rem;
+    font-family: "Reenie Beanie";
+    color: white;
+}

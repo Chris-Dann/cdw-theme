@@ -1,0 +1,11 @@
+.dano_home_header {
+    background: linear-gradient( rgba(6,19,71,0.6), rgba(6,9,71,0.6) ), url(../images/header_image_mobile.jpg);
+    height: 500px;
+    background-position: center right;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+    padding-top: 1px /* hack to stop child element top margin pushing div down */
+}
+
+.home_callback {
+    margin-top: 100px;
+}
